@@ -193,3 +193,19 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# ===== 本项目补充：大模型权重（约 2.3G，用 download_models.sh 下载，不入库） =====
+GPT_SoVITS/pretrained_models/
+
+# G2PWModel（中文 G2P，约 1.2G 副本，运行时由脚本下载到 text/ 与 pretrained_models/）
+GPT_SoVITS/text/G2PWModel_1.1.zip
+GPT_SoVITS/text/G2PWModel/
+**/G2PWModel/g2pW.onnx
+
+# 用户数据（上传的干音 / 生成结果）
+voice_output/
+voice_samples/
+*.wav
+
+# 系统临时
+/tmp/
